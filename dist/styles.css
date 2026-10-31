@@ -82,9 +82,6 @@ a { color: inherit; text-decoration: none; }
 .text-link span { margin-left: 8px; color: var(--rust); }
 .hero-art { position: relative; height: 350px; overflow: hidden; opacity: .95; }
 .hero-art .hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.hero-index { position: absolute; bottom: 22px; left: 0; display: flex; align-items: center; gap: 10px; color: #818980; font: 10px var(--mono); }
-.hero-index i { display: block; width: 70px; height: 1px; background: var(--line); }
-.hero-index span:first-child { color: var(--rust); }
 .section { padding: 93px 0 88px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 27px; }
 .section-heading h2, .contact-section h2, .gallery-heading h2 { margin: 0; font: 500 38px/1.1 var(--serif); letter-spacing: -.025em; font-optical-sizing: auto; }
@@ -337,8 +334,6 @@ html[data-theme="dark"] {
 html[data-theme="dark"] body { background: var(--paper); color: var(--ink); }
 html[data-theme="dark"] .main-nav a,
 html[data-theme="dark"] .hero-lede,
-html[data-theme="dark"] .art-caption,
-html[data-theme="dark"] .hero-index,
 html[data-theme="dark"] .section-index,
 html[data-theme="dark"] .project-meta,
 html[data-theme="dark"] .publication-card .publication-citation,
@@ -422,8 +417,6 @@ html[data-theme="dark"] .place-feature img { background: var(--surface); }
   .hero h1 { margin: 24px 0 18px; font-size: 58px; }
   .hero-lede { max-width: 340px; font-size: 15px; }
   .hero-art { height: 190px; margin: 18px -5px 0 23px; }
-  .art-caption { font-size: 8px; }
-  .hero-index { bottom: 15px; }
   .section { padding: 65px 0; }
   .section-heading h2, .contact-section h2 { font-size: 32px; }
   .project-card { min-height: 210px; grid-template-columns: .75fr 1.25fr; }
