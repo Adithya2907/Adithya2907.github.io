@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f5f3ec" /><script>try{const t=localStorage.getItem('adi-theme');document.documentElement.dataset.theme=t==='dark'||t==='light'?t:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch{document.documentElement.dataset.theme=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}</script>
-    <meta name="description" content="Adi — engineer and builder in Bangalore, interested in reliable backend and distributed systems." />
-    <title>Adi — Engineer &amp; Builder</title>
+    <meta name="description" content="Adi is a backend engineer at DevRev building incident response, hierarchical team workspaces, and customer platform systems." />
+    <title>Adi — Backend Engineer at DevRev</title>
     <link rel="stylesheet" href="/styles.css" />
     <link rel="prefetch" href="/" />
     <link rel="prefetch" href="/elsewhere.html" />
@@ -19,7 +19,9 @@
     <header class="site-header wrap">
       <a class="wordmark" href="/" aria-label="Adi home">ADI<span class="wordmark-dot">.</span></a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a class="active" href="/" aria-current="page">Technical</a>
+        <a class="active" href="#projects" aria-current="location">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
         <a href="/elsewhere.html">Elsewhere</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -29,9 +31,9 @@
     <main id="main">
       <section class="hero wrap">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-rule"></span> Engineer <span class="eyebrow-note">/ builder · Bangalore</span></p>
-          <h1>Complex problems.<br /><em>Carefully built systems.</em></h1>
-          <p class="hero-lede">I like breaking complex problems into smaller pieces, then building reliable systems with care—from the first clear model to the details that make software dependable.</p>
+          <p class="eyebrow"><span class="eyebrow-rule"></span> Member of Technical Staff <span class="eyebrow-note">/ DevRev · Bangalore</span></p>
+          <h1>Backend engineer.<br /><em>Building at DevRev.</em></h1>
+          <p class="hero-lede">I’ve built incident response, hierarchical team workspaces, and customer platform systems—from the data models underneath to the integrations and workflows people use.</p>
           <a class="text-link" href="#projects">Explore selected projects <span aria-hidden="true">↘</span></a>
         </div>
         <div class="hero-art" aria-hidden="true">
@@ -45,14 +47,14 @@
           <span class="section-index">PRODUCT / SYSTEMS</span>
         </div>
         <div class="project-grid">
-          <article class="project-card">
+          <a class="project-card" href="/projects/case-study.html?project=incident-management">
             <div class="project-visual" aria-hidden="true"><span class="visual-number">01</span><img src="/images/project-incident-management.webp" alt="" loading="lazy" decoding="async" /></div>
-            <div class="project-body"><p class="card-kicker">DEVREV / INCIDENT RESPONSE</p><h3>Incident management &amp; AI on-call</h3><p class="project-description">Built incident models and paging from scratch, then helped a four-person team ship an AI on-call agent that triages Datadog alerts, suggests owners from GitHub history, and proposes fixes.</p><div class="project-meta"><span>Detection: ~7–8 hours → ~5 minutes</span><span>AI-assisted on-call</span></div></div>
-          </article>
-          <article class="project-card">
+            <div class="project-body"><p class="card-kicker">DEVREV / INCIDENT RESPONSE</p><h3>Incident management &amp; AI on-call</h3><p class="project-description">Built incident models and paging from scratch, then helped a four-person team ship an AI on-call agent that triages Datadog alerts, suggests owners from GitHub history, and proposes fixes.</p><div class="project-meta"><span>Detection: ~7–8 hours → ~5 minutes</span><span>Case study ↗</span></div></div>
+          </a>
+          <a class="project-card" href="/projects/case-study.html?project=team-workspaces">
             <div class="project-visual" aria-hidden="true"><span class="visual-number">02</span><img src="/images/project-team-spaces-v2.webp" alt="" loading="lazy" decoding="async" /></div>
-            <div class="project-body"><p class="card-kicker">DEVREV / PLATFORM ARCHITECTURE</p><h3>Team-scoped workspaces</h3><p class="project-description">Led hierarchical team spaces, access controls, and isolated issues and sprints across navigation, widgets, and space-aware models; built the migration framework and integrated Spaces into Computer.</p><div class="project-meta"><span>Team isolation · access controls</span><span>Platform migrations</span></div></div>
-          </article>
+            <div class="project-body"><p class="card-kicker">DEVREV / PLATFORM ARCHITECTURE</p><h3>Hierarchical team workspaces</h3><p class="project-description">Extended existing workspaces with organization-aligned teams, access controls, and scoped issues and sprints—integrated across the product and Computer.</p><div class="project-meta"><span>Cross-platform integration</span><span>Case study ↗</span></div></div>
+          </a>
           <article class="project-card">
             <div class="project-visual" aria-hidden="true"><span class="visual-number">03</span><img src="/images/project-audience-builder-v2.webp" alt="" loading="lazy" decoding="async" /></div>
             <div class="project-body"><p class="card-kicker">DEVREV / CUSTOMER PLATFORMS</p><h3>Audience builder framework</h3><p class="project-description">Architected and built a segmentation framework from scratch, giving teams a flexible way to create personalized customer experiences.</p><div class="project-meta"><span>Used by 50+ customers</span></div></div>
@@ -74,18 +76,18 @@
 
       <section class="builder-section wrap" aria-labelledby="builder-title">
         <div class="builder-heading">
-          <div><p class="eyebrow small">HOW I BUILD</p><h2 id="builder-title">Engineering is in the details.<br /><em>So is the experience.</em></h2></div>
-          <p class="builder-intro">I care about the whole path from a messy problem to a product people can rely on: making the system understandable, getting the fundamentals right, and sweating the details customers actually feel.</p>
+          <div><p class="eyebrow small">HOW I BUILD</p><h2 id="builder-title">I like the work between<br /><em>systems and people.</em></h2></div>
+          <p class="builder-intro">The hardest parts often cross boundaries: an alert has to become an actionable incident, or a team hierarchy has to make sense across an entire product. I like following those problems through to the customer workflow.</p>
         </div>
         <div class="builder-principles">
-          <article><span>01 / DECOMPOSE</span><h3>Make complexity tractable</h3><p>Find the right boundaries, turn ambiguity into clear models, and solve the hard parts one deliberate step at a time.</p></article>
-          <article><span>02 / MAKE IT LAST</span><h3>Build dependable systems</h3><p>Care about failure modes, performance, and operational simplicity so a system stays understandable as it grows.</p></article>
-          <article><span>03 / MAKE IT MATTER</span><h3>Make good engineering felt</h3><p>Listen for customer friction and sweat the interface details that make a powerful product feel clear and effortless.</p></article>
+          <article><span>01 / INCIDENT RESPONSE</span><h3>Connect signal to action</h3><p>Incident models and paging, then an AI agent that brings alert data, likely ownership, and proposed fixes into one response flow.</p></article>
+          <article><span>02 / PLATFORM ARCHITECTURE</span><h3>Carry a model across surfaces</h3><p>Team hierarchy touched access, scoped work, navigation, widgets, migrations, and DevRev’s Computer agent.</p></article>
+          <article><span>03 / PRODUCT OUTCOMES</span><h3>Follow through to the result</h3><p>From customer segmentation used by 50+ customers to incident detection reduced from hours to minutes.</p></article>
         </div>
-        <p class="ai-note">AI makes more things possible. I’m interested in turning that possibility into systems and product experiences people can trust.</p>
+        <p class="ai-note"><strong>A little about me:</strong> A prototype I built for a Solana hackathon once led to a job offer. Later, I invited Zerodha’s CTO to speak at a campus hackathon and interviewed him for an hour.</p>
       </section>
 
-      <section class="section wrap publication-section" aria-labelledby="publication-title">
+      <section class="section wrap publication-section" id="research" aria-labelledby="publication-title">
         <div class="section-heading"><div><p class="eyebrow small">RESEARCH &amp; PUBLICATION</p><h2 id="publication-title">Android malware detection</h2></div><span class="section-index">BROADNETS 2023 / CO-AUTHOR</span></div>
         <article class="publication-card">
           <div>
@@ -112,13 +114,13 @@
         </div>
       </section>
 
-      <section class="experience-section wrap" aria-labelledby="experience-title">
+      <section class="experience-section wrap" id="experience" aria-labelledby="experience-title">
         <div class="section-heading"><div><p class="eyebrow small">EXPERIENCE</p><h2 id="experience-title">Places I’ve worked</h2></div><span class="section-index">SELECTED BACKGROUND</span></div>
         <ol class="experience-list">
           <li><div class="experience-heading"><span class="experience-place">DevRev</span><span class="experience-role">Member of Technical Staff</span></div><time datetime="2023-07">Jul 2023 — Present</time><p class="experience-summary">Built incident-management and AI on-call systems, led workspace-aware platform architecture, and shipped customer segmentation and custom-domain capabilities.</p></li>
           <li><div class="experience-heading"><span class="experience-place">Harness.io</span><span class="experience-role">Software Engineer Intern</span></div><time datetime="2023-01">Jan — Jun 2023</time><p class="experience-summary">Primary backend contributor to Software Supply Chain Assurance, including repository and artifact security, SBOM support, and SLSA attestations. The product is now in production.</p></li>
-          <li><div class="experience-heading"><span class="experience-place">DevRev</span><span class="experience-role">Member of Technical Staff Intern</span></div><time datetime="2022-05">May — Jul 2022</time></li>
-          <li><div class="experience-heading"><span class="experience-place">CEERI, Chennai</span><span class="experience-role">Research Intern</span></div><time>Summer 2021</time></li>
+          <li><div class="experience-heading"><span class="experience-place">DevRev</span><span class="experience-role">Member of Technical Staff Intern</span></div><time datetime="2022-05">May — Jul 2022</time><p class="experience-summary">An earlier internship at DevRev; I returned as a full-time engineer in 2023.</p></li>
+          <li><div class="experience-heading"><span class="experience-place">CEERI, Chennai</span><span class="experience-role">Research Intern</span></div><time>Summer 2021</time><p class="experience-summary">Worked on an OCR-based seal-detection system that was later deployed at the National Stock Exchange.</p></li>
         </ol>
       </section>
 
@@ -133,7 +135,7 @@
 
       <section class="contact-section wrap" id="contact">
         <div><p class="eyebrow small">HAVE SOMETHING IN MIND?</p><h2>Let’s talk.</h2><p class="contact-copy">Reach me by email, LinkedIn, or GitHub.</p></div>
-        <div class="contact-links"><a href="mailto:adithya.m290701@gmail.com">Email <small>ADITHYA.M290701@GMAIL.COM</small></a><a href="https://www.linkedin.com/in/adi297/" target="_blank" rel="noreferrer">LinkedIn <small>ADI297</small></a><a href="https://github.com/Adithya2907" target="_blank" rel="noreferrer">GitHub <small>ADITHYA2907</small></a></div>
+        <div class="contact-links"><a href="mailto:adithya.m290701@gmail.com">Email <small>adithya.m290701@gmail.com</small></a><a href="https://www.linkedin.com/in/adi297/" target="_blank" rel="noreferrer">LinkedIn <small>ADI297</small></a><a href="https://github.com/Adithya2907" target="_blank" rel="noreferrer">GitHub <small>ADITHYA2907</small></a></div>
       </section>
     </main>
 
