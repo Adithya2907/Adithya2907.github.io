@@ -28,24 +28,10 @@
       outcomeTitle: 'Make team context part of the platform.',
       outcome: 'Teams could have controlled membership and access, with their own scoped issues and sprints. The hierarchy was integrated across platform surfaces and Computer.'
     },
-    nse: {
-      title: 'OCR seal detection',
-      summary: 'An OCR-based seal-detection system deployed at the National Stock Exchange.',
-      focus: 'Applied research · OCR · document processing',
-      role: 'Research Intern · CEERI, Chennai',
-      outcomeBrief: 'System deployed at NSE',
-      badge: 'CEERI / NATIONAL STOCK EXCHANGE',
-      problemTitle: 'Detect seals in documents.',
-      problem: 'This applied research project focused on identifying seals with an OCR-based system for use at the National Stock Exchange.',
-      approachTitle: 'Build an applied OCR system.',
-      approach: 'I built an OCR-based system focused on detecting seals in documents, then worked through to deployment.',
-      outcomeTitle: 'Move the work into deployment.',
-      outcome: 'The system was deployed at the National Stock Exchange.'
-    }
   };
 
   const params = new URLSearchParams(window.location.search);
-  const project = projects[params.get('project')] || projects.nse;
+  const project = projects[params.get('project')] || projects['incident-management'];
   document.title = `${project.title} — Adi`;
   document.querySelector('#project-title').firstChild.textContent = project.title;
   document.querySelector('#project-crumb').textContent = project.title;
