@@ -1,9 +1,9 @@
 (() => {
   const root = document.documentElement;
-  const themeColor = document.querySelector('meta[name="theme-color"]');
 
   function applyTheme(theme, save = false) {
     root.dataset.theme = theme;
+    const themeColor = document.querySelector('meta[name="theme-color"]');
     if (themeColor) themeColor.content = theme === 'dark' ? '#151d19' : '#f5f3ec';
     document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
       button.setAttribute('aria-pressed', String(theme === 'dark'));
@@ -16,9 +16,8 @@
   }
 
   applyTheme(root.dataset.theme === 'dark' ? 'dark' : 'light');
-  document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
-    button.addEventListener('click', () => {
-      applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
-    });
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('[data-theme-toggle]')) return;
+    applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark', true);
   });
 })();
