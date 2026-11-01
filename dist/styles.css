@@ -80,6 +80,10 @@ a { color: inherit; text-decoration: none; }
 .hero-lede { max-width: 480px; margin: 0 0 27px; color: var(--muted); font-size: 17px; }
 .text-link { padding-bottom: 7px; border-bottom: 1px solid #859287; font-size: 13px; font-weight: 600; }
 .text-link span { margin-left: 8px; color: var(--rust); }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; }
+.resume-link { display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid var(--green); color: var(--ink); transition: background .2s, color .2s; }
+.resume-link:hover { background: var(--green); color: var(--paper); }
+.resume-link span { margin: 0; color: inherit; }
 .hero-art { position: relative; height: 350px; overflow: hidden; opacity: .95; }
 .hero-art .hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .section { padding: 93px 0 88px; }
