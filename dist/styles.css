@@ -60,7 +60,8 @@ a { color: inherit; text-decoration: none; }
 .skip-link { position: absolute; left: -999px; top: 8px; z-index: 5; padding: 10px 14px; background: var(--ink); color: white; }
 .skip-link:focus { left: 8px; }
 .site-header { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
-.wordmark { font: 600 23px var(--serif); letter-spacing: .03em; }
+.wordmark { display: inline-flex; align-items: center; gap: 8px; font: 600 23px var(--serif); letter-spacing: .03em; }
+.compass-mark { width: 22px; height: 22px; flex: 0 0 22px; }
 .wordmark-dot { color: var(--rust); }
 .main-nav { display: flex; align-items: center; gap: 42px; height: 100%; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
 .main-nav a { position: relative; display: grid; height: 100%; place-items: center; color: #545e58; }
@@ -340,6 +341,7 @@ html[data-theme="dark"] {
   --soft-border: #3b4940;
 }
 html[data-theme="dark"] body { background: var(--paper); color: var(--ink); }
+html[data-theme="dark"] .compass-mark { filter: brightness(1.75); }
 html[data-theme="dark"] .main-nav a,
 html[data-theme="dark"] .hero-lede,
 html[data-theme="dark"] .section-index,
@@ -420,7 +422,8 @@ html[data-theme="dark"] .place-feature img { background: var(--surface); }
   body { font-size: 14px; }
   .wrap { width: calc(100% - 36px); }
   .site-header { height: 68px; }
-  .wordmark { font-size: 20px; }
+  .wordmark { gap: 6px; font-size: 20px; }
+  .compass-mark { width: 19px; height: 19px; flex-basis: 19px; }
   .main-nav { gap: 9px; font-size: 8px; letter-spacing: .025em; }
   .theme-toggle { width: 31px; height: 31px; flex-basis: 31px; font-size: 16px; }
   .main-nav .active::after { bottom: 15px; }
